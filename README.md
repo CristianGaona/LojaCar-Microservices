@@ -1,10 +1,13 @@
-# Proyecto de Trabajo de Titulación Integración de Microservicios con Arquitectura Monolitica
+# Proyecto de Trabajo de Titulación Integración de Microservicios con Arquitectura Monolitica 💻
 ## Microservicios 🚀
 ### Microservicio Seguridad
+* https://github.com/CristianGaona/LojaCar-Microservice-Seguridad
 ### Microservicio Actividades
+* https://github.com/CristianGaona/LojaCar-Microservicio-Actividades
+### Microservicio Empleados
+* https://github.com/CristianGaona/LojaCar-Microservicio-Empleados
 
-
-## Servidor Local (Localhost)
+## Servidor Local (Localhost) :floppy_disk:
 ### Comandos Docker
 Crear red: **docker network create lojacar**
 
@@ -19,3 +22,8 @@ Crear contenedor kafka : **docker run -p 2181:2181 -p 9092:9092 --name lojacarka
 * **cp server.properties severcopy.properties** crear una copia del servidor kafka (archivo server.properties) en caso que se dañe el archivo original o para tener varios servidores y de esta forma asegurar la tolerancia a fallos.
 * **vi server.properties** para entar a la edición del archivo ahi se puede observar el id del broker, el host y puerto en el que esta corriendo el servidor de kafka o broker, la ruta de logs, número de particiones, replicas y la conexióna a zookeper, tomar en consideración que el **advertised.listeners=PLAINTEXT://127.0.0.1:9092** este habilitado
 * **:q!** para salir sin guiardar cambios o **:qw** para salir y guardar cambios
+
+
+
+### Iconos
+https://gist.github.com/rxaviers/7360908

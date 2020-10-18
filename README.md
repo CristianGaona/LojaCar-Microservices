@@ -1,6 +1,6 @@
 # Proyecto de Trabajo de Titulación Integración de Microservicios con Arquitectura Monolitica 💻
 
-https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1#G1dspOUN6TAEwN6JG_V6U6jclX3WNKfsqL
+video: https://youtube.com/embed/w3jLJU7DT5E
 
 ## Microservicios 🚀
 ### Microservicio Seguridad

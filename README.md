@@ -9,6 +9,8 @@ IMAGEN DEL DIAGRAMA
 * https://github.com/CristianGaona/LojaCar-Microservicio-Actividades
 ### Microservicio Empleados
 * https://github.com/CristianGaona/LojaCar-Microservicio-Empleados
+### Servidor Eureka
+* https://github.com/CristianGaona/LojaCar-Eureka-Server
 
 ## Servidor Local (Localhost) :floppy_disk:
 ### Comandos Docker

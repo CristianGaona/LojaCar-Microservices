@@ -9,11 +9,46 @@ IMAGEN DEL DIAGRAMA
 * https://github.com/CristianGaona/LojaCar-Microservicio-Actividades
 ### Microservicio Empleados
 * https://github.com/CristianGaona/LojaCar-Microservicio-Empleados
+### Microservicio Clientes
+* https://github.com/CristianGaona/LojaCar-Microservicios-Clientes
 ### Servidor Eureka
 * https://github.com/CristianGaona/LojaCar-Eureka-Server
 
+## Integración
+### Source Connector
+``` json
+{
+    "name": "sample-postgress-jdbc-connector10",
+    "config": {
+        "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+        "tasks.max": "2",
+        "connection.url": "jdbc:postgresql://localhost:5432/tt-stage-db?user=crisda24&password=sebas2118",
+        "query": "SELECT * FROM (SELECT rp.id, rp.name, rp.email, rp.phone, rp.function, rp.commercial_company_name, rp.street, rp.zip, rp.city, cont.name pais, rp.write_date FROM res_partner rp, res_country cont WHERE rp.country_id = cont.id) table_clients",
+        "mode": "timestamp",
+        "timestamp.column.name": "write_date",
+        "topic.prefix": "clients",
+        "validate.non.null": "false"
+    }
+}
+````
+### Sink Connector
+``` json
+{
+    "name": "sample-mysql-jdbc-sinkconnector",
+    "config": {
+        "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+        "tasks.max": "2",
+        "topics":"clients",
+        "connection.url": "jdbc:mysql://localhost:3306/clients_microservice?serverTimezone=UTC",
+        "connection.user":"root",
+        "connection.password":"crisda24",
+        "update.mode": "update",
+        "auto.create":true
+    }
+}
+```
 ## Servidor Local (Localhost) :floppy_disk:
-### Comandos Docker
+### Comandos Docker (Intalar con Apache Kafka en contenedor Docker)
 Crear red: **docker network create lojacar**
 
 Crear contenedor kafka : **docker run -p 2181:2181 -p 9092:9092 --name lojacarkafka --network lojacar -e ADVERTISED_HOST=127.0.0.1  -e NUM_PARTITIONS=3 johnnypark/kafka-zookeeper**

@@ -1,9 +1,7 @@
 # Proyecto de Trabajo de Titulación Integración de Microservicios con Arquitectura Monolitica 💻
-
-IMAGEN DEL DIAGRAMA
-
-
-
+![image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb276891b-c72c-420d-8106-307d8715b3b2%2FIntegracin-Page-1.png?table=block&id=e0149881-d020-4264-a379-d2b526122e97&width=2860&userId=&cache=v2)
+# Esquema arquitectónico de integración
+![image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fabd5ccd3-83ea-48dc-8d15-1c0a22c0b9fc%2FIntegracin-Kafka_Connect.png?table=block&id=7c11f151-7fac-434b-806c-d7fd4e5feb2d&width=3240&userId=&cache=v2)
 # Arquitetura de Microservicios
 ![image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F81bf9939-8aae-4fc8-ad7c-434d450a859f%2FMicroservicios-architecture.png?table=block&id=62e0c693-a012-4e60-90b9-9a7489652787&width=2020&userId=&cache=v2)
 ## Microservicios 🚀

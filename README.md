@@ -2,6 +2,10 @@
 
 IMAGEN DEL DIAGRAMA
 
+
+
+# Arquitetura de Microservicios
+![image](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F81bf9939-8aae-4fc8-ad7c-434d450a859f%2FMicroservicios-architecture.png?table=block&id=62e0c693-a012-4e60-90b9-9a7489652787&width=2020&userId=&cache=v2)
 ## Microservicios 🚀
 ### Microservicio Seguridad
 * https://github.com/CristianGaona/LojaCar-Microservice-Seguridad

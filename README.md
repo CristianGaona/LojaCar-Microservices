@@ -52,7 +52,7 @@
 }
 ```
 ## Servidor Local (Localhost) :floppy_disk:
-### Comandos Docker (Intalar con Apache Kafka en contenedor Docker)
+### Comandos Docker (Instalar con Apache Kafka en contenedor Docker)
 Crear red: **docker network create lojacar**
 
 Crear contenedor kafka : **docker run -p 2181:2181 -p 9092:9092 --name lojacarkafka --network lojacar -e ADVERTISED_HOST=127.0.0.1  -e NUM_PARTITIONS=3 johnnypark/kafka-zookeeper**
